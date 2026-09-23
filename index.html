@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Ledwaba Wedding Celebration | Preparation Reporting & Challenges</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9e9e9;
+    color: #111;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    background: #fff;
+    padding: 15mm;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+/* =========================================================
+   FIRST PAGE / COVER IMAGE
+========================================================= */
+
+.cover-page {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 297mm;
+}
+
+.cover-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    border-bottom: 3px solid #111;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+}
+
+.header-top {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header h1 {
+    font-size: 26px;
+    margin-top: 8px;
+    line-height: 1.15;
+}
+
+.header h2 {
+    font-size: 17px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.session {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* =========================================================
+   META
+========================================================= */
+
+.meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.meta-box {
+    border: 1px solid #bbb;
+    padding: 10px;
+    background: #f7f7f7;
+}
+
+.meta-label {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.meta-value {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.summary {
+    border: 2px solid #111;
+    padding: 12px;
+    margin-bottom: 18px;
+}
+
+.summary-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.summary-text {
+    font-size: 12px;
+}
+
+/* =========================================================
+   SECTION CARDS
+========================================================= */
+
+.section {
+    border: 1px solid #aaa;
+    margin-bottom: 15px;
+    page-break-inside: avoid;
+}
+
+.section-header {
+    background: #111;
+    color: #fff;
+    padding: 10px 12px;
+}
+
+.section-number {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.owner {
+    background: #f1f1f1;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ccc;
+    font-size: 11px;
+}
+
+.owner strong {
+    text-transform: uppercase;
+}
+
+.section-body {
+    padding: 12px;
+}
+
+.subheading {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+}
+
+.problem {
+    margin-bottom: 12px;
+}
+
+.recommendations {
+    margin-top: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    font-size: 11.5px;
+    margin-bottom: 5px;
+}
+
+/* =========================================================
+   SIGNATURES
+========================================================= */
+
+.signature-area {
+    margin-top: 25px;
+    page-break-inside: avoid;
+}
+
+.signature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.signature-box {
+    padding-top: 30px;
+}
+
+.signature-line {
+    border-bottom: 1px solid #111;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.signature-name {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.signature-role {
+    font-size: 10px;
+    color: #555;
+}
+
+.signature-date {
+    margin-top: 18px;
+    font-size: 11px;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    border-top: 1px solid #bbb;
+    margin-top: 25px;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 9px;
+    color: #555;
+}
+
+.confidential {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    body {
+        background: #fff;
+    }
+
+    .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+    }
+
+    .page:last-child {
+        page-break-after: auto;
+    }
+
+    .cover-page {
+        height: 297mm;
+        min-height: 297mm;
+    }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 800px) {
+
+    body {
+        background: #fff;
+    }
+
+    .page {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .cover-page {
+        padding: 0;
+        min-height: auto;
+    }
+
+    .cover-page img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .meta-grid,
+    .signature-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     PAGE 1 — IMAGE / OFFICIAL COVER
+===================================================== -->
+
+<section class="page cover-page">
+
+    <img
+        src="IMG-20260923-WA2640.jpg"
+        alt="El Shaddai International - Ledwaba Wedding Celebration Official Document">
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 2 — OFFICIAL DOCUMENT
+===================================================== -->
+
+<section class="page">
+
+    <header class="header">
+
+        <div class="header-top">
+            El Shaddai International • Official Document
+        </div>
+
+        <h1>
+            LEDWABA WEDDING CELEBRATION
+        </h1>
+
+        <h2>
+            PREPARATION REPORTING &amp; CHALLENGES
+        </h2>
+
+        <div class="session">
+            15H00 Formal Session
+        </div>
+
+    </header>
+
+
+    <!-- =================================================
+         DOCUMENT INFORMATION
+    ================================================== -->
+
+    <div class="meta-grid">
+
+        <div class="meta-box">
+
+            <div class="meta-label">
+                Host
+            </div>
+
+            <div class="meta-value">
+                Mrs Mogoswane
+            </div>
+
+        </div>
+
+
+        <div class="meta-box">
+
+            <div class="meta-label">
+                Overseer
+            </div>
+
+            <div class="meta-value">
+                Office of the Presiding Pastor (The Apostle)
+            </div>
+
+        </div>
+
+
+        <div class="meta-box">
+
+            <div class="meta-label">
+                Wedding Date
+            </div>
+
+            <div class="meta-value">
+                27 SEPT 2026 • 09:00–12:00
+            </div>
+
+        </div>
+
+
+        <div class="meta-box">
+
+            <div class="meta-label">
+                Prepared For
+            </div>
+
+            <div class="meta-value">
+                Presiding Pastor's Office
+            </div>
+
+        </div>
+
+
+        <div class="meta-box">
+
+            <div class="meta-label">
+                Classification
+            </div>
+
+            <div class="meta-value">
+                Internal Committee
+            </div>
+
+        </div>
+
+
+        <div class="meta-box">
+
+            <div class="meta-label">
+                Session
+            </div>
+
+            <div class="meta-value">
+                Formal Preparation Review
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="summary">
+
+        <div class="summary-title">
+            SECTION SUMMARY
+        </div>
+
+        <div class="summary-text">
+            5 Sections • Formal Review • Preparation Reporting • Challenges •
+            Recommendations • Emergency Readiness
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         SECTION 1A
+    ================================================== -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <div class="section-number">
+                SEC01 • SECTION 1A
+            </div>
+
+            <div class="section-title">
+                WORSHIP TEAM – PROGRAM SCOPE
+            </div>
+
+        </div>
+
+
+        <div class="owner">
+
+            <strong>Owner / Responsible:</strong>
+            Worship Leader &amp; Mr Lamp
+
+        </div>
+
+
+        <div class="section-body">
+
+            <div class="problem">
+
+                <div class="subheading">
+                    Problem Identified
+                </div>
+
+                <ul>
+
+                    <li>
+                        No final song list locked, keys not matched to vocalists.
+                    </li>
+
+                    <li>
+                        Duplication: Entrance of Groom/Bride appears twice,
+                        causing band cue confusion.
+                    </li>
+
+                    <li>
+                        “Heavenly Menu” &amp; “Mother/Fatherland” unclear for
+                        worship flow.
+                    </li>
+
+                    <li>
+                        No time allocation = 4+ hour overrun risk.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="recommendations">
+
+                <div class="subheading">
+                    Recommendations
+                </div>
+
+                <ul>
+
+                    <li>
+                        Lock final song list TODAY – no additions after 15H00.
+                    </li>
+
+                    <li>
+                        Merge to ONE Grand Entrance at 09:40.
+                    </li>
+
+                    <li>
+                        Define Heavenly Menu as 20 min Sermon by Apostle.
+                    </li>
+
+                    <li>
+                        Revise to 3-hour flow 09:00–12:00.
+                    </li>
+
+                    <li>
+                        Assign Mr Lamp as Wedding Day Instrumental Coordinator.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SECTION 1B
+    ================================================== -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <div class="section-number">
+                SEC02 • SECTION 1B
+            </div>
+
+            <div class="section-title">
+                WORSHIP TEAM – READINESS &amp; REHEARSAL
+            </div>
+
+        </div>
+
+
+        <div class="owner">
+
+            <strong>Owner / Responsible:</strong>
+            Mr Lamp (Instrumental)
+
+        </div>
+
+
+        <div class="section-body">
+
+            <div class="problem">
+
+                <div class="subheading">
+                    Problem Identified
+                </div>
+
+                <ul>
+
+                    <li>
+                        Availability unknown – no confirmed list.
+                    </li>
+
+                    <li>
+                        No backup musicians.
+                    </li>
+
+                    <li>
+                        Rehearsal dates not locked.
+                    </li>
+
+                    <li>
+                        Spares not confirmed – cables, batteries, drum sticks.
+                    </li>
+
+                    <li>
+                        No emergency box.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="recommendations">
+
+                <div class="subheading">
+                    Recommendations
+                </div>
+
+                <ul>
+
+                    <li>
+                        Confirm full team today with names + backup list.
+                    </li>
+
+                    <li>
+                        48hr notice rule for absence.
+                    </li>
+
+                    <li>
+                        Lock 2 rehearsals: Band-only + Full team + Final sound
+                        check 2hrs before.
+                    </li>
+
+                    <li>
+                        Create shared emergency spares kit.
+                    </li>
+
+                    <li>
+                        Record attendance after each rehearsal.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SECTION 2
+    ================================================== -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <div class="section-number">
+                SEC03 • SECTION 2
+            </div>
+
+            <div class="section-title">
+                USHERING &amp; LOGISTICS
+            </div>
+
+        </div>
+
+
+        <div class="owner">
+
+            <strong>Owner / Responsible:</strong>
+            Mrs Maila &amp; Mr Kamo
+
+        </div>
+
+
+        <div class="section-body">
+
+            <div class="problem">
+
+                <div class="subheading">
+                    Problem Identified
+                </div>
+
+                <ul>
+
+                    <li>
+                        Toilet utilities not checked.
+                    </li>
+
+                    <li>
+                        Water stations not planned.
+                    </li>
+
+                    <li>
+                        Parking plan missing.
+                    </li>
+
+                    <li>
+                        Jump Castle vs Parking Conflict – jump castle may block
+                        grand entrance pathway and parking.
+                    </li>
+
+                    <li>
+                        Grand entrance pathway not cleared.
+                    </li>
+
+                    <li>
+                        No transition plan ceremony to reception.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="recommendations">
+
+                <div class="subheading">
+                    Recommendations
+                </div>
+
+                <ul>
+
+                    <li>
+                        Toilet check 08:30 with soap, paper, attendant.
+                    </li>
+
+                    <li>
+                        Water: drinking water for guests + team on stage.
+                    </li>
+
+                    <li>
+                        Parking team assigned with marked spaces for bridal car,
+                        elderly, Pastor.
+                    </li>
+
+                    <li>
+                        Jump castle placed away from entrance with permanent
+                        adult supervisor.
+                    </li>
+
+                    <li>
+                        Clear grand entrance pathway at 09:40, lower jump castle
+                        volume during vows.
+                    </li>
+
+                    <li>
+                        Transition plan 12:00–12:15.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SECTION 3
+    ================================================== -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <div class="section-number">
+                SEC04 • SECTION 3
+            </div>
+
+            <div class="section-title">
+                PROGRAM FLOW &amp; TIMING
+            </div>
+
+        </div>
+
+
+        <div class="owner">
+
+            <strong>Owner / Responsible:</strong>
+            Mrs Phuti Makalela (Program Director) &amp; Mrs Mogoswane
+
+        </div>
+
+
+        <div class="section-body">
+
+            <div class="problem">
+
+                <div class="subheading">
+                    Problem Identified
+                </div>
+
+                <ul>
+
+                    <li>
+                        19 items with zero time allocation.
+                    </li>
+
+                    <li>
+                        Offerings after announcement will feel rushed.
+                    </li>
+
+                    <li>
+                        No signing of register.
+                    </li>
+
+                    <li>
+                        No photography pause.
+                    </li>
+
+                    <li>
+                        No recessional.
+                    </li>
+
+                    <li>
+                        Welcome to Mother/Fatherland needs protocol – who speaks
+                        how long.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="recommendations">
+
+                <div class="subheading">
+                    Recommendations
+                </div>
+
+                <ul>
+
+                    <li>
+                        Adopt revised 09:00–12:00 schedule (3 hours).
+                    </li>
+
+                    <li>
+                        Move Offerings BEFORE Declaration 11:40–11:50.
+                    </li>
+
+                    <li>
+                        Add 5 min photography pause during vows.
+                    </li>
+
+                    <li>
+                        Add recessional exit 11:50–12:00.
+                    </li>
+
+                    <li>
+                        Limit Mother/Fatherland to 2 speakers, 3 mins each,
+                        with MC control.
+                    </li>
+
+                    <li>
+                        Program Director has authority to cut time if overrun.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SECTION 4
+    ================================================== -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <div class="section-number">
+                SEC05 • SECTION 4
+            </div>
+
+            <div class="section-title">
+                EMERGENCY READINESS
+            </div>
+
+        </div>
+
+
+        <div class="owner">
+
+            <strong>Owner / Responsible:</strong>
+            All Leads – Mrs Mogoswane Oversight
+
+        </div>
+
+
+        <div class="section-body">
+
+            <div class="problem">
+
+                <div class="subheading">
+                    Problem Identified
+                </div>
+
+                <ul>
+
+                    <li>
+                        No backup for sound failure.
+                    </li>
+
+                    <li>
+                        No power outage plan.
+                    </li>
+
+                    <li>
+                        No medical/fainting plan.
+                    </li>
+
+                    <li>
+                        No weather/rain alternative.
+                    </li>
+
+                    <li>
+                        No child safety plan for jump castle.
+                    </li>
+
+                    <li>
+                        No authority for time cuts.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="recommendations">
+
+                <div class="subheading">
+                    Recommendations
+                </div>
+
+                <ul>
+
+                    <li>
+                        <strong>Sound fails:</strong>
+                        Backup battery speaker + pre-loaded playlist +
+                        handheld mic ready.
+                    </li>
+
+                    <li>
+                        <strong>Power outage:</strong>
+                        Emergency lights + phone torches + calm leadership
+                        continue worship.
+                    </li>
+
+                    <li>
+                        <strong>Medical:</strong>
+                        First aid kit + water + clear exit path +
+                        designated caller.
+                    </li>
+
+                    <li>
+                        <strong>Weather:</strong>
+                        Tent/indoor alternative confirmed.
+                    </li>
+
+                    <li>
+                        <strong>Child Safety:</strong>
+                        Adult supervisor at jump castle at all times +
+                        safety rules + no overcrowding.
+                    </li>
+
+                    <li>
+                        Give MC authority to shorten items if overrun –
+                        Worship to 10 mins max.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SIGNATURES
+    ================================================== -->
+
+    <div class="signature-area">
+
+        <div class="signature-grid">
+
+
+            <div class="signature-box">
+
+                <div class="signature-line"></div>
+
+                <div class="signature-name">
+                    Mrs Mogoswane
+                </div>
+
+                <div class="signature-role">
+                    Wedding Preparation Host
+                </div>
+
+                <div class="signature-date">
+                    Signature &amp; Date: ______________________________
+                </div>
+
+            </div>
+
+
+            <div class="signature-box">
+
+                <div class="signature-line"></div>
+
+                <div class="signature-name">
+                    Office of the Presiding Pastor
+                </div>
+
+                <div class="signature-role">
+                    The Apostle • Overseer
+                </div>
+
+                <div class="signature-date">
+                    Signature &amp; Date: ______________________________
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         SESSION RECORD
+    ================================================== -->
+
+    <div class="summary" style="margin-top: 25px;">
+
+        <div class="summary-title">
+            DATE OF SESSION
+        </div>
+
+        <div class="summary-text">
+            15H00 Formal Session – Preparation Reporting Meeting
+        </div>
+
+        <div style="margin-top: 10px; font-size: 11px;">
+            <strong>Date:</strong>
+            23 SEPT 2026
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+        <div>
+            E • Ledwaba Wedding Celebration | 27 Sept 2026 |
+            El Shaddai International
+        </div>
+
+        <div class="confidential">
+            Official Committee Document • Confidential • Print on A4 – High Quality
+        </div>
+
+        <div style="margin-top: 4px;">
+            El Shaddai International • Wedding Committee • Official Record
+        </div>
+
+    </footer>
+
+</section>
+
+</body>
+</html>
