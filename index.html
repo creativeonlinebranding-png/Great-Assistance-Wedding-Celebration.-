@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Ledwaba Wedding Celebration - Preparation Reporting & Challenges Meeting
+</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+    color: #111111;
+    line-height: 1.5;
+}
+
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 16mm;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    border-bottom: 3px solid #111111;
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+}
+
+.organization {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.header h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.session-time {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 14px;
+    border: 1px solid #111111;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* HOST INFORMATION */
+
+.host-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #bbbbbb;
+    margin-bottom: 24px;
+}
+
+.info-box {
+    padding: 12px;
+    background: #f7f7f7;
+}
+
+.info-box:first-child {
+    border-right: 1px solid #bbbbbb;
+}
+
+.info-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #666666;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.info-value {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* AGENDA */
+
+.agenda-title {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #111111;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+}
+
+.agenda-item {
+    border: 1px solid #c8c8c8;
+    margin-bottom: 13px;
+    page-break-inside: avoid;
+}
+
+.agenda-header {
+    background: #111111;
+    color: #ffffff;
+    padding: 10px 12px;
+}
+
+.item-number {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.item-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.item-content {
+    padding: 12px 14px;
+    font-size: 12px;
+}
+
+.item-content p {
+    margin-bottom: 6px;
+}
+
+.item-content p:last-child {
+    margin-bottom: 0;
+}
+
+.sub-item {
+    margin-top: 9px;
+    padding-left: 5px;
+}
+
+.sub-item strong {
+    display: block;
+    margin-bottom: 3px;
+}
+
+ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+/* TIME */
+
+.time {
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    background: #ffffff;
+    color: #111111;
+    padding: 3px 7px;
+    border-radius: 2px;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 25px;
+    padding-top: 12px;
+    border-top: 1px solid #bbbbbb;
+    text-align: center;
+    font-size: 9px;
+    color: #555555;
+}
+
+.footer strong {
+    color: #111111;
+}
+
+/* PRINT */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    body {
+        background: #ffffff;
+    }
+
+    .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 16mm;
+        box-shadow: none;
+    }
+
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 800px) {
+
+    body {
+        background: #ffffff;
+    }
+
+    .page {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .host-info {
+        grid-template-columns: 1fr;
+    }
+
+    .info-box:first-child {
+        border-right: none;
+        border-bottom: 1px solid #bbbbbb;
+    }
+
+    .time {
+        float: none;
+        display: inline-block;
+        margin-left: 6px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="organization">
+            El Shaddai International • Official Committee Document
+        </div>
+
+        <h1>
+            LEDWABA WEDDING CELEBRATION
+        </h1>
+
+        <h2>
+            PREPARATION REPORTING &amp; CHALLENGES MEETING
+        </h2>
+
+        <div class="session-time">
+            FORMAL SESSION • 15H00
+        </div>
+
+    </header>
+
+
+    <!-- HOST / OVERSEER -->
+
+    <div class="host-info">
+
+        <div class="info-box">
+
+            <div class="info-label">
+                Host
+            </div>
+
+            <div class="info-value">
+                Mrs Mogoswane
+            </div>
+
+        </div>
+
+
+        <div class="info-box">
+
+            <div class="info-label">
+                Overseer
+            </div>
+
+            <div class="info-value">
+                The Apostle – Office of the Presiding Pastor
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- AGENDA -->
+
+    <div class="agenda-title">
+        Formal Structure – Text Version for Minutes
+    </div>
+
+
+    <!-- 1 -->
+
+    <section class="agenda-item">
+
+        <div class="agenda-header">
+
+            <span class="item-number">
+                01
+            </span>
+
+            <span class="time">
+                15:00–15:05
+            </span>
+
+            <div class="item-title">
+                OPENING &amp; INVOCATION
+            </div>
+
+        </div>
+
+
+        <div class="item-content">
+
+            <p>
+                <strong>Presiding Pastor</strong>
+            </p>
+
+            <p>
+                Opening prayer, dedication of gifts, core commitment reading.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 2 -->
+
+    <section class="agenda-item">
+
+        <div class="agenda-header">
+
+            <span class="item-number">
+                02
+            </span>
+
+            <span class="time">
+                15:05–15:10
+            </span>
+
+            <div class="item-title">
+                WELCOME &amp; INTRODUCTIONS
+            </div>
+
+        </div>
+
+
+        <div class="item-content">
+
+            <p>
+                <strong>Mrs Mogoswane</strong>
+            </p>
+
+            <p>
+                Welcome to all departments – Worship Team, Program, Logistics.
+            </p>
+
+            <p>
+                <strong>Roll Call:</strong>
+                Presiding Pastor, Mrs Mogoswane, Worship Leader,
+                Mrs Makalela, Mr Lamp, Mrs Maila.
+            </p>
+
+            <p>
+                Apologies recorded.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 3 -->
+
+    <section class="agenda-item">
+
+        <div class="agenda-header">
+
+            <span class="item-number">
+                03
+            </span>
+
+            <span class="time">
+                15:10–15:15
+            </span>
+
+            <div class="item-title">
+                PURPOSE &amp; HOUSE RULES
+            </div>
+
+        </div>
+
+
+        <div class="item-content">
+
+            <p>
+                <strong>Mrs Mogoswane</strong>
+            </p>
+
+            <p>
+                <strong>Purpose:</strong>
+                Reporting, gap-spotting, emergency readiness.
+            </p>
+
+            <p>
+                <strong>Rule:</strong>
+                Final song list locked today.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 4 -->
+
+    <section class="agenda-item">
+
+        <div class="agenda-header">
+
+            <span class="item-number">
+                04
+            </span>
+
+            <span class="time">
+                15:15–15:35
+            </span>
+
+            <div class="item-title">
+                WORSHIP TEAM LEADER REPORT
+            </div>
+
+        </div>
+
+
+        <div class="item-content">
+
+            <div class="sub-item">
+
+                <strong>
+                    A. Program Scope
+                </strong>
+
+                <ul>
+
+                    <li>
+                        Order of Service
+                    </li>
+
+                    <li>
+                        Cues
+                    </li>
+
+                    <li>
+                        Final List
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="sub-item">
+
+                <strong>
+                    B. Readiness
+                </strong>
+
+                <ul>
+
+                    <li>
+                        Team attendance
+                    </li>
+
+                    <li>
+                        Absence &amp; strategy
+                    </li>
+
+                    <li>
+                        Rehearsal plan
+                    </li>
+
+                    <li>
+                        Instrumental preparation
+                    </li>
+
+                    <li>
+                        Recommendations
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 5 -->
+
+    <section class="agenda-item">
+
+        <div class="agenda-header">
+
+            <span class="item-number">
+                05
+            </span>
+
+            <span class="time">
+                15:35–15:50
+            </span>
+
+            <div class="item-title">
+                USHERING &amp; LOGISTICS REPORT
+            </div>
+
+        </div>
+
+
+        <div class="item-content">
+
+            <p>
+                <strong>
+                    Mrs Maila &amp; Mr Kamo
+                </strong>
+            </p>
+
+            <ul>
+
+                <li>
+                    Toilet utilities
+                </li>
+
+                <li>
+                    Water
+                </li>
+
+                <li>
+                    Parking plan
+                </li>
+
+                <li>
+                    Jump castle vs parking conflict
+                </li>
+
+                <li>
+                    Grand entrance
+                </li>
+
+                <li>
+                    Day proceedings
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- 6 -->
+
+    <section class="agenda-item">
+
+        <div class="agenda-header">
+
+            <span class="item-number">
+                06
+            </span>
+
+            <span class="time">
+                15:50–16:00
+            </span>
+
+            <div class="item-title">
+                EMERGENCY READINESS &amp; OTHER MATTERS
+            </div>
+
+        </div>
+
+
+        <div class="item-content">
+
+            <ul>
+
+                <li>
+                    Sound failure
+                </li>
+
+                <li>
+                    Power outage
+                </li>
+
+                <li>
+                    Medical
+                </li>
+
+                <li>
+                    Weather
+                </li>
+
+                <li>
+                    Child safety – Jump Castle
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- 7 -->
+
+    <section class="agenda-item">
+
+        <div class="agenda-header">
+
+            <span class="item-number">
+                07
+            </span>
+
+            <span class="time">
+                16:00–16:08
+            </span>
+
+            <div class="item-title">
+                RESOLUTIONS &amp; ACTION ITEMS
+            </div>
+
+        </div>
+
+
+        <div class="item-content">
+
+            <p>
+                <strong>Mrs Mogoswane</strong>
+            </p>
+
+            <p>
+                Challenges identified, ownership assigned, deadlines set.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 8 -->
+
+    <section class="agenda-item">
+
+        <div class="agenda-header">
+
+            <span class="item-number">
+                08
+            </span>
+
+            <span class="time">
+                16:08–16:10
+            </span>
+
+            <div class="item-title">
+                CLOSING &amp; BENEDICTION
+            </div>
+
+        </div>
+
+
+        <div class="item-content">
+
+            <p>
+                <strong>Presiding Pastor</strong>
+            </p>
+
+            <p>
+                Closing resolution and prayer.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div>
+            <strong>
+                LEDWABA WEDDING CELEBRATION
+            </strong>
+        </div>
+
+        <div>
+            Preparation Reporting &amp; Challenges Meeting
+        </div>
+
+        <div>
+            El Shaddai International • Official Committee Record
+        </div>
+
+    </footer>
+
+
+</div>
+
+
+</body>
+</html>
